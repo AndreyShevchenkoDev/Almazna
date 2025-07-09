@@ -14,7 +14,7 @@ class SimpleHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(b"Алмазна бот работает. Все под контролем, мой господин!")
+        self.wfile.write("Алмазна бот работает. Все под контролем, мой господин!")
 
 # Запускаем HTTP сервер, чтобы Render не закрывал процесс
 def run_http_server():
